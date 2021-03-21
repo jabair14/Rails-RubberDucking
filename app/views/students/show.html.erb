@@ -1,0 +1,14 @@
+<h1> student show page </h1>
+<br>
+<p> <%= @student.name %> </p>
+<br>
+<p> <%= @student.mod %> </p>
+<br>
+<p> Owns these ducks: </p>
+ <% @student.ducks.each do |duck| %>
+        <p> Name:
+        <p> <%= duck.name %> </p>
+        <br>
+        <p> Description: </p>
+        <p> <%= duck.description %> </p>
+        <% end %>
