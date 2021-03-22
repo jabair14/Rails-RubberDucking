@@ -7,3 +7,9 @@
 <h3> Belongs to: </h3>
     <p> <%= @duck.student.name %> </p>
     <p> <%= @duck.student.mod %> </p>
+<br>
+<%= button_to "Edit", edit_duck_path, method: :get %>
+<br>
+<%= button_to "All the cool ducks", ducks_path, method: :get %>
+<br>
+<%= button_to "All the Students", students_path, method: :get %>

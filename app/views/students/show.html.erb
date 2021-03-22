@@ -12,3 +12,8 @@
         <p> Description: </p>
         <p> <%= duck.description %> </p>
         <% end %>
+<%= button_to "Edit", edit_student_path, method: :get %>
+<br>
+<%= button_to "All the Students", students_path, method: :get %>
+<br>
+<%= button_to "All the cool ducks", ducks_path, method: :get %>
